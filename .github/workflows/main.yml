@@ -36,6 +36,8 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install qt6-tools-dev extra-cmake-modules
+        wget http://ftp.debian.org/debian/pool/main/p/polkit-qt-1/libpolkit-qt6-1-1_0.200.0-2+b1_amd64.deb
+        sudo dpkg -i libpolkit-qt6-1-1_0.200.0-2+b1_amd64.deb
         wget http://ftp.debian.org/debian/pool/main/p/polkit-qt-1/libpolkit-qt6-1-dev_0.200.0-2+b1_amd64.deb
         sudo dpkg -i libpolkit-qt6-1-dev_0.200.0-2+b1_amd64.deb
 
